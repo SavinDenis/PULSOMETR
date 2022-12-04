@@ -4,6 +4,7 @@ const sass        = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
+const resolve = require("cjs-module/resolve");
 
 gulp.task('server', function() {
 
