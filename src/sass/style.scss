@@ -1,0 +1,19 @@
+*{
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+@import 'base/variables';
+@import 'block/promo';
+@import 'block/header';
+@import 'block/buttons';
