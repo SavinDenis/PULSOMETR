@@ -1,0 +1,25 @@
+.form {
+    margin-top: 38px;
+    &__main {
+        display: flex;
+        flex-direction: column;
+        width: 303px;
+        input {
+            padding: 0 20px;
+            height: 54px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            &:last-child{
+                margin-bottom: 20px;
+            }
+        }
+       
+        &::placeholder{
+
+           line-height: 54px;
+           font-size: 14px; 
+           color: $placeholder-color;
+        } 
+    }
+}

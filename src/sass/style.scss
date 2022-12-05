@@ -12,9 +12,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 }
 
-.container {
-    max-width: 400px;
-}
+
 
 
 @import 'base/variables';
@@ -22,3 +20,5 @@ h1,h2,h3,h4,h5,h6,p {
 @import 'block/header';
 @import 'block/buttons';
 @import 'block/benefits';
+@import 'block/consultation';
+@import 'block/forms';
