@@ -9,14 +9,15 @@
         color: $main-color-text;
     }
     &__items {
-        margin-top: 60px;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
     &__item + &__item {
         margin-left: 66px;
     }
     &__item {
+        margin-top: 60px; /*  font-family: 'MuseoModerno'; */
         max-width: 275px;
         text-align: center;
         img {
@@ -34,5 +35,39 @@
     &__descr {
         margin-top: 20px;
         color: $main-color-text;
+        span > a {
+            font-family: "MuseoModerno", serif;
+            color: $main-color;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 724px) {
+    .benefits {
+        &__items {
+
+            justify-content: space-around;
+        }
+        &__item{ 
+            max-width: 240px;
+            margin-top: 40px;
+        }
+        &__item + &__item {
+            margin-left: 0;
+        }
+    }
+}
+
+
+
+@media (max-width: 425px) {
+    .benefits {
+        &__title{
+            font-size: 22px;
+        }
+        &__item + &__item {
+            margin-left: 0;
+        }
     }
 }

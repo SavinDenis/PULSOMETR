@@ -50,12 +50,26 @@
             color: #fff;
             text-transform: uppercase;
             text-decoration: underline;
-        
         }
     }
 }
 
+@media (max-width: 724px) {
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+        &__title {
+            font-size: 32px;
+        }
+        &__subtitle {
+            font-size: 20px;
+        }
+        &__icons {
+            max-width: 360px;
+        }
+    }
+}
 
-            
-            
-            
+@media (max-width: 425px) {
+}

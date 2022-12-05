@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     &__logo {
@@ -40,3 +41,35 @@
         align-items: flex-end;
     }
 }
+
+
+
+@media (max-width: 724px) {
+   .header {
+    justify-content: space-around;
+    &__phone{
+
+        margin-top: 20px;
+    }
+   }
+}
+
+
+
+@media (max-width:425px) {
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        &__logo{
+            margin-bottom: 20px;
+        }
+        &__phone{
+            margin-top: 20px;
+        }
+        
+    }
+
+
+
+}
+
