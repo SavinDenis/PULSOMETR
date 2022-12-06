@@ -14,6 +14,7 @@
         display: flex;
         justify-content: center;
         margin-bottom: 57px;
+
     }
     &__tab {
         margin: 0 5px;
@@ -27,6 +28,7 @@
         border: 2px solid #D0D0D0;
         transform: skewX(-20deg);
         transition: 0.5s all;
+        list-style-type: none;
         div {
             transform: skewX(20deg);
         }
@@ -42,9 +44,13 @@
 
     }
     &__cards {
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        display: none;
+        &_active {
+            display: flex;
+        }
     }
 }
