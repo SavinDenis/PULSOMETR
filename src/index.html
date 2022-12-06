@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;500&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -108,11 +108,11 @@
         <div class="container">
             <h2 class="consultation__title">
                 Получите бесплатную консультацию <br>
-                 по подбору пульсометра 
+                по подбору пульсометра
             </h2>
             <h4 class="consultation__subtitle">
                 Просто заполните форму заявки <br>
-                 и мы перезвоним вам в течении 10 минут
+                и мы перезвоним вам в течении 10 минут
             </h4>
             <form action="#" class="form form__main">
                 <input name="name" placeholder="Ваше имя" requared type="text">
@@ -123,6 +123,85 @@
         </div>
     </section>
 
+    <section class="slider">
+        <div class="container">
+            <div class="slider__inner">
+                <div class="slider__item">
+                    <img src="img/slide1.png" alt="foto1">
+                </div>
+                <div class="slider__item">
+                    <img src="img/slide2.png" alt="foto2">
+                </div>
+                <div class="slider__item">
+                    <img src="img/slide3.png" alt="foto3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <h2 class="catalog__title">Каталог пульсометров</h2>
+            <div class="catalog__wrapper">
+                <div class="catalog__tabs">
+                    <a class="catalog__tab  catalog__tab_active">
+                        <div>Для фитнеса</div>
+                    </a>
+                    <a class="catalog__tab">
+                        <div>для бега</div>
+                    </a>
+                    <a class="catalog__tab">
+                        <div>для триатлона</div>
+                    </a>
+                </div>
+                <div class="catalog__cards">
+                    <div class="card">
+                        <div class="card__content">
+                            <div class="card__main ">
+                                <img class="card__img" src="img/photo.png" alt="">
+                                <div class="card__descr">
+                                    <h4 class="card__title">Пульсометр <strong>Polar FT1</strong></h4>
+                                    <div class="card__text">
+                                        Для первых шагов в тренировках, основанных на сердечном ритме
+                                    </div>
+                                    <a class="card__link">подробнее</a>
+                                </div>
+                            </div>
+                            
+                                <ul class="card__list card__list_active">
+                                    <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                    <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                    </li>
+                                    <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                                    <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                                    <a class="card__list_back">назад</a>
+                                </ul>
+
+                            
+                        </div>
+                        <hr>
+                        <div class="card__footer">
+                            <div class="card__prices">
+                                <div class="card_old-price">
+                                    4 750 руб.
+                                </div>
+                                <div class="card_new-price">
+                                    4 500 руб.
+                                </div>
+                            </div>
+                            <button class="button button_card">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>

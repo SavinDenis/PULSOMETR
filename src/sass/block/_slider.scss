@@ -1,0 +1,35 @@
+.slider {
+    padding: 108px 0;
+    &__inner {
+        position: relative;
+        margin: 0 auto;
+        max-width: 750px;
+    }
+    &__item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        background-color: #fff;
+        left: -66px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        &:hover {
+            cursor: pointer;
+        }
+        img {
+            width: 30px;
+            height: 50px;
+        }
+    }
+    .slick-next {
+        left: auto;
+        right: -66px;
+    }
+   
+}

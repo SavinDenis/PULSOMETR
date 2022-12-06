@@ -1,0 +1,140 @@
+.card {
+    position: relative;
+    max-width: 303px;
+    padding: 20px 18px;
+    border: 2px solid $card-border;
+    margin-bottom: 10px;
+    overflow: hidden;
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        max-width: 140px;
+    }
+    &__title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 25px;
+        color: $main-color-text;
+        strong {
+            font-family: "MuseoModerno", serif;
+        }
+    }
+    &__text {
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    &__link {
+        display: block;
+        color: $main-color;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        text-decoration: underline;
+        &_back {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    hr {
+        border: none;
+        border-bottom: 1px solid $card-border;
+        margin: 19px 0;
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_old-price {
+        font-family: "MuseoModerno";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        text-decoration: line-through;
+        color: #555555;
+    }
+    &_new-price {
+        font-family: "MuseoModerno";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        color: #050505;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        width: calc(200% + 40px);
+    }
+    &__main {
+        width: 50%;
+        margin-right: 0px;
+        transform: translateX(-100%);
+        transition: 0.5s all;
+        &_active {
+            transform: translateX(0%);
+            margin-right: 20px;
+        }
+    }
+    &__list {
+        width: 50%;
+        margin-left: 20px;
+        transform: translateX(0%);
+        transition: 0.5s all;
+        position: relative;
+        &_back {
+            display: block;
+            color: $main-color;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            text-decoration: underline;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-64%);
+        }
+
+        li {
+            position: relative;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 21px;
+            color: #555555;
+            list-style-type: none;
+            margin: 0;
+            padding: 0 14px;
+            &::before {
+                position: absolute;
+                content: "";
+                height: 5px;
+                width: 5px;
+                background-color: $main-color;
+                left: 0;
+                top: 7px;
+            }
+        }
+        li + li {
+            margin-bottom: 3px;
+        }
+
+        &_active {
+            transform: translateX(-100%);
+            margin-left: 0px;
+        }
+    }
+}

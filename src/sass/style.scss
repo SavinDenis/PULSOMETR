@@ -6,10 +6,13 @@ a{
     text-decoration: none;
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1,h2,h3,h4,h5,h6,p,ul {
     margin: 0;
     padding: 0;
 
+}
+*{
+    box-sizing: border-box;
 }
 
 
@@ -22,3 +25,6 @@ h1,h2,h3,h4,h5,h6,p {
 @import 'block/benefits';
 @import 'block/consultation';
 @import 'block/forms';
+@import 'block/slider';
+@import 'block/catalog';
+@import 'block/card';
