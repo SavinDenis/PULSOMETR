@@ -1,0 +1,55 @@
+.feedback {
+    margin-top: 48px;
+    margin-bottom: 32px;
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        
+        color: $main-color-text;
+    }
+    &__wrapper {
+        max-width: 915px;
+        margin: 0 auto;
+
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        img {
+            display: block;
+            
+        }
+    }
+    &__foto {
+        margin-right: 61px;
+        width: 169px;
+        height: 169px;
+
+    }
+
+    &__content {
+        &-name {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+            color: $main-color-text;
+        }
+        &-sub {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #646464;
+            margin-bottom: 10px;
+        }
+        &-descr {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            color: $main-color-text;
+        }
+    }
+}
