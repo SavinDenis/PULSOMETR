@@ -49,6 +49,35 @@ $(document).ready(function () {
     toggleSlide('.card__link');
     toggleSlide('.card__list_back');
 
+/* модальные окна */
+
+/* открытие при нажатии на кнопку */
+
+    $('[data-modal=modal__main]').on('click', function(){
+        $('.overlay, #modal__main').fadeIn('slow');
+
+    }); 
+    
+  /*   $('[data-modal=modal__order').on('click', function(){
+        $('.overlay, #modal__order').fadeIn('slow');
+    }); */
+
+    $('[data-modal=modal__order').each(function(i){
+        $(this).on('click', function(){
+            $('#modal__order .modal__subtitle').text($('.card__title').eq(i).text());
+            $('.overlay, #modal__order').fadeIn('slow');
+        })
+    })
+
+    /* закрытие крестиком */
+
+    $('.modal__close').on('click', function(){
+        $('.overlay, #modal__main, #modal__order, #mini').fadeOut('slow');
+    });
+
+   
+
+
 });
 
 
