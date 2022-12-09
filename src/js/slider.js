@@ -2,8 +2,8 @@
 $(document).ready(function () {
     $('.slider__inner').slick({
         infinite: false,
-        prevArrow: '<button type="button" class="slick-prev"><img src="../icons/chevron_left.svg"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../icons/chevron_right.svg"></button>'
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron_left.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron_right.svg"></button>'
 
     });
 
@@ -67,7 +67,7 @@ $(document).ready(function () {
             $('#modal__order .modal__subtitle').text($('.card__title').eq(i).text());
             $('.overlay, #modal__order').fadeIn('slow');
         })
-    })
+    });
 
     /* закрытие крестиком */
 
@@ -75,9 +75,15 @@ $(document).ready(function () {
         $('.overlay, #modal__main, #modal__order, #mini').fadeOut('slow');
     });
 
+   /*  $("form").validate(); */
+
+    $('input[name=phone').mask("+7 (999) 999-99-99");
+
+    define(["jquery", "jquery.validate"], function($) {
+        $(".form").validate();
+    });
+
    
-
-
 });
 
 

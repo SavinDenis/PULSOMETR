@@ -8,7 +8,6 @@
 }
 
 .modal {
-    
     position: absolute;
     padding: 35px 26px 40px;
     min-height: 400px;
@@ -18,6 +17,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #f2f2f2;
+    form {
+        margin: 0 auto;
+        margin-top: 26px;
+    }
     &__title {
         text-align: center;
         font-weight: 700;
@@ -47,14 +50,11 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;
-        
     }
 }
-form {
-    margin: 0 auto;
-    margin-top: 26px;
-}
 
-#modal__main, #modal__order, #mini {
+#modal__main,
+#modal__order,
+#mini {
     display: none;
 }
