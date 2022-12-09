@@ -75,15 +75,34 @@ $(document).ready(function () {
         $('.overlay, #modal__main, #modal__order, #mini').fadeOut('slow');
     });
 
-   /*  $("form").validate(); */
+
+
+   /* маска номера в форме */
 
     $('input[name=phone').mask("+7 (999) 999-99-99");
 
-    define(["jquery", "jquery.validate"], function($) {
-        $(".form").validate();
-    });
 
-   
+    /* отправка писем с сайта  */
+    $('form').submit(function(e){
+        e.preventDefault();
+
+        if(!$(this).valid()){
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function(){
+            $(this).find("input").val("");
+
+
+
+            $('form').trigger('reset');
+        });
+        return false;
+    }); 
 });
 
 
