@@ -20,16 +20,28 @@
         margin-top: 60px; /*  font-family: 'MuseoModerno'; */
         max-width: 275px;
         text-align: center;
-        img {
-            display: block;
-            margin: 0 auto;
-        }
         &-title {
             margin-top: 35px;
             color: $main-color-text;
             font-weight: 700;
             font-size: 18px;
             line-height: 29px;
+        }
+    } 
+        
+
+    &__img {
+        display: block;
+        margin: 0 auto; 
+        &_animated {
+            animation-name: heartbeat;
+            animation-duration: 1.4s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+
         }
     }
     &__descr {
@@ -46,10 +58,9 @@
 @media (max-width: 724px) {
     .benefits {
         &__items {
-
             justify-content: space-around;
         }
-        &__item{ 
+        &__item {
             max-width: 240px;
             margin-top: 40px;
         }
@@ -59,14 +70,12 @@
     }
 }
 
-
-
 @media (max-width: 425px) {
     .container {
         max-width: 400px;
     }
     .benefits {
-        &__title{
+        &__title {
             font-size: 22px;
         }
         &__item + &__item {

@@ -16,7 +16,7 @@ $(document).ready(function () {
             .closest('div.catalog__wrapper').find('div.catalog__cards').removeClass('catalog__cards_active').eq($(this).index()).addClass('catalog__cards_active');
     });
 
-/* Не оптимизированный код перезода подробнее-назад */
+    /* Не оптимизированный код перезода подробнее-назад */
 
     /* $('.card__link').each(function (i) {
         $(this).on('click', function (e) {
@@ -34,7 +34,7 @@ $(document).ready(function () {
         })
     }); */
 
-/* Оптимизированный код перезода подробнее-назад */
+    /* Оптимизированный код перехода подробнее-назад */
 
     function toggleSlide(card) {
         $(card).each(function (i) {
@@ -49,52 +49,48 @@ $(document).ready(function () {
     toggleSlide('.card__link');
     toggleSlide('.card__list_back');
 
-/* модальные окна */
+    /* модальные окна */
 
-/* открытие при нажатии на кнопку */
+    /* открытие при нажатии на кнопку */
 
-    $('[data-modal=modal__main]').on('click', function(){
+    $('[data-modal=modal__main]').on('click', function () {
         $('.overlay, #modal__main').fadeIn('slow');
 
-    }); 
-    
-  /*   $('[data-modal=modal__order').on('click', function(){
-        $('.overlay, #modal__order').fadeIn('slow');
-    }); */
+    });
 
-    $('[data-modal=modal__order').each(function(i){
-        $(this).on('click', function(){
+    /*   $('[data-modal=modal__order').on('click', function(){
+          $('.overlay, #modal__order').fadeIn('slow');
+      }); */
+
+    $('[data-modal=modal__order').each(function (i) {
+        $(this).on('click', function () {
             $('#modal__order .modal__subtitle').text($('.card__title').eq(i).text());
             $('.overlay, #modal__order').fadeIn('slow');
         })
     });
 
     /* закрытие крестиком */
-
-    $('.modal__close').on('click', function(){
+    $('.modal__close').on('click', function () {
         $('.overlay, #modal__main, #modal__order, #mini').fadeOut('slow');
     });
 
 
 
-   /* маска номера в форме */
-
+    /* маска номера в форме */
     $('input[name=phone').mask("+7 (999) 999-99-99");
 
 
     /* отправка писем с сайта  */
-    $('form').submit(function(e){
+    $('form').submit(function (e) {
         e.preventDefault();
-
-        if(!$(this).valid()){
+        if (!$(this).valid()) {
             return;
         }
-
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",
             data: $(this).serialize()
-        }).done(function(){
+        }).done(function () {
             $(this).find("input").val("");
 
 
@@ -102,7 +98,35 @@ $(document).ready(function () {
             $('form').trigger('reset');
         });
         return false;
-    }); 
+    });
+
+    /*  js-modalform-order
+     js-modalform-consultation
+     js-form-consultation
+  */
+
+    /*  $('.js-modalform-order').validate();
+     $('.js-modalform-consultation').validate();
+     $('.js-form-consultation').validate(); */
+
+    /* появление кнопки скрола на верх*/
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 800) {
+            $('.pageup').fadeIn();
+
+        }
+        else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    /* плавный скролл на верх */
+
+    $("a[href^='#']").click(function () {
+        const _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+        return false;
+    });
 });
 
 

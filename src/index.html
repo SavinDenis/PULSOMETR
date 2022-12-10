@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <section class="promo">
+    <section class="promo" id="scrollup">
         <div class=" container container-sm container-md">
             <header class="header">
                 <div class="header__logo">
@@ -30,7 +30,7 @@
                 </div>
                 <div class="header__contacts">
                     <a class="header__phone" href="tel:+74999228974">+7 (499) 922-89-74</a>
-                    <button  data-modal="modal__main" class="button">
+                    <button data-modal="modal__main" class="button">
                         заказать звонок
                     </button>
                 </div>
@@ -69,7 +69,7 @@
             <h2 class="benefits__title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="benefits__items">
                 <div class="benefits__item">
-                    <img src="icons/cup.svg" alt="cup">
+                    <img class="benefits__img " src="icons/cup.svg" alt="cup">
                     <div class="benefits__item-title">
                         Делимся опытом
                     </div>
@@ -79,8 +79,8 @@
                     </div>
                 </div>
 
-                <div class="benefits__item">
-                    <img src="icons/heart.svg" alt="heart">
+                <div class="benefits__item ">
+                    <img class="benefits__img benefits__img_animated" src="icons/heart.svg" alt="heart">
                     <div class="benefits__item-title">
                         Заботимся о здоровье
                     </div>
@@ -91,7 +91,7 @@
                 </div>
 
                 <div class="benefits__item">
-                    <img src="icons/shoe.svg" alt="shoe">
+                    <img class="benefits__img" src="icons/shoe.svg" alt="shoe">
                     <div class="benefits__item-title">
                         Учим бегать
                     </div>
@@ -114,11 +114,11 @@
                 Просто заполните форму заявки <br>
                 и мы перезвоним вам в течении 10 минут
             </h4>
-            <form id="consultation" action="#" class="form form__main">
+            <form id="consultation" action="#" class="form form__main js-form-consultation">
                 <input name="name" placeholder="Ваше имя" type="text">
                 <input name="phone" placeholder="Ваш телефон">
                 <input name="email" placeholder="Ваш e-mail" type="email">
-                <button  class="button button_form">Заказать консультацию</button>
+                <button class="button button_form" type="submit">Заказать консультацию</button>
             </form>
         </div>
     </section>
@@ -154,7 +154,7 @@
                         для триатлона
                     </li>
                 </ul>
-<!-- Первый таб -->
+                <!-- Первый таб -->
                 <div class="catalog__cards catalog__cards_active ">
                     <div class="card">
                         <div class="card__content">
@@ -187,7 +187,7 @@
                                     4 500 руб.
                                 </div>
                             </div>
-                            <button data-modal="modal__order" class="button button_card">Купить</button>
+                            <button data-modal="modal__order" class="button button_card" type="submit">Купить</button>
                         </div>
                     </div>
 
@@ -222,7 +222,7 @@
                                     6 641 руб.
                                 </div>
                             </div>
-                            <button data-modal="modal__order" class="button button_card">Купить</button>
+                            <button data-modal="modal__order" class="button button_card" type="submit">Купить</button>
                         </div>
                     </div>
 
@@ -257,11 +257,11 @@
                                     7 021 руб.
                                 </div>
                             </div>
-                            <button data-modal="modal__order" class="button button_card">Купить</button>
+                            <button data-modal="modal__order" class="button button_card" type="submit">Купить</button>
                         </div>
                     </div>
                 </div>
-<!-- Второй таб -->
+                <!-- Второй таб -->
                 <div class="catalog__cards  ">
                     <div class="card">
                         <div class="card__content">
@@ -294,7 +294,7 @@
                                     4 500 руб.
                                 </div>
                             </div>
-                            <button data-modal="modal__order" class="button button_card">Купить</button>
+                            <button data-modal="modal__order" class="button button_card" type="submit">Купить</button>
                         </div>
                     </div>
                     <div class="card">
@@ -328,7 +328,7 @@
                                     4 500 руб.
                                 </div>
                             </div>
-                            <button  data-modal="modal__order" class="button button_card">Купить</button>
+                            <button data-modal="modal__order" class="button button_card" type="submit">Купить</button>
                         </div>
                     </div>
                     <div class="card">
@@ -362,11 +362,11 @@
                                     4 500 руб.
                                 </div>
                             </div>
-                            <button data-modal="modal__order" class="button button_card">Купить</button>
+                            <button data-modal="modal__order" class="button button_card" type="submit">Купить</button>
                         </div>
                     </div>
                 </div>
-<!-- третий таб -->
+                <!-- третий таб -->
                 <div class="catalog__cards  ">
                     <div class="card">
                         <div class="card__content">
@@ -399,7 +399,7 @@
                                     4 500 руб.
                                 </div>
                             </div>
-                            <button data-modal="modal__order" class="button button_card">Купить</button>
+                            <button data-modal="modal__order" class="button button_card" type="submit">Купить</button>
                         </div>
                     </div>
                     <div class="card">
@@ -433,7 +433,7 @@
                                     4 500 руб.
                                 </div>
                             </div>
-                            <button data-modal="modal__order" class="button button_card">Купить</button>
+                            <button data-modal="modal__order" class="button button_card" type="submit">Купить</button>
                         </div>
                     </div>
                     <div class="card">
@@ -467,7 +467,7 @@
                                     6 631 руб.
                                 </div>
                             </div>
-                            <button data-modal="modal__order" class="button button_card">Купить</button>
+                            <button data-modal="modal__order" class="button button_card" type="submit">Купить</button>
                         </div>
                     </div>
                 </div>
@@ -562,11 +562,11 @@
             <div class="modal__subtitle">
                 и мы перезвоним вам в течении 10 минут
             </div>
-            <form action="" class="form form__main">
+            <form action="" class="form form__main js-modalform-consultation">
                 <input name="name" placeholder="Ваше имя" type="text">
-                <input name="phone" placeholder="Ваш телефон" >
+                <input name="phone" placeholder="Ваш телефон">
                 <input name="email" placeholder="Ваш e-mail" type="email">
-                <button class="button button_form">Заказать консультацию</button>
+                <button class="button button_form" type="submit">Заказать консультацию</button>
             </form>
         </div>
         <div class="modal" id="modal__order">
@@ -577,14 +577,14 @@
             <div class="modal__subtitle">
                 Пульсометр Polar FT1
             </div>
-            <form action="" class="form form__main">
+            <form action="" class="form form__main js-modalform-order">
                 <input name="name" placeholder="Ваше имя" type="text">
                 <input name="phone" placeholder="Ваш телефон">
                 <input name="email" placeholder="Ваш e-mail" type="email">
-                <button class="button button_form">Купить</button>
+                <button class="button button_form" type="submit">Купить</button>
             </form>
         </div>
-        <div class="modal modal__mini" id="mini">
+        <div class="modal modal__mini js-modal-mini" id="mini">
             <div class="modal__close">&times;</div>
             <div class="modal__title">
                 Спасибо за вашу заявку!
@@ -595,12 +595,20 @@
         </div>
     </div>
 
+   
+    
+        <a href="#scrollup" class="pageup">
+            <img  class="icon" src="icons/circle-up.svg" alt="up">
+        </a>
+    
+
 
     <script src="jquery.js"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/slider.js"></script>
 </body>
