@@ -127,6 +127,11 @@ $(document).ready(function () {
         $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
         return false;
     });
+
+/*  подключение WOW анимации + обязательное подключение animate.css */
+
+    new WOW().init();
+
 });
 
 

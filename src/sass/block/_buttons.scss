@@ -9,6 +9,11 @@
     font-weight: 500;
     border: none;
     border-radius: 5px;
+    transition: 0.3s all;
+    &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
     &_main {
         margin-top: 65px;
         width: 303px;
@@ -22,13 +27,7 @@
         line-height: 25px;
         width: 303px;
         height: 54px;
-        transition: 0.3s all;
-        &:hover {
-            border: none;
-            cursor: pointer;
-            box-shadow: 3px 3px 20px $main-color;
-        }
-
+        
     }
     &_card {
         width: 135px;
